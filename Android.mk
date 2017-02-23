@@ -88,9 +88,7 @@ vixl_test_files := \
 vixl_cpp_flags := \
   -DVIXL_INCLUDE_SIMULATOR \
   -DVIXL_GENERATE_SIMULATOR_INSTRUCTIONS_VALUE=0 \
-  -Wall \
   -Wextra \
-  -Werror \
   -fdiagnostics-show-option \
   -Wredundant-decls \
   -Wunreachable-code \
@@ -105,7 +103,7 @@ vixl_cpp_flags += \
 
 vixl_cpp_flags_release := \
   $(vixl_cpp_flags) \
-  -O3 \
+  -O2 \
 
 vixl_cpp_flags_debug := \
   $(vixl_cpp_flags) \
