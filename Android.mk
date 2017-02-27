@@ -71,7 +71,6 @@ vixl_src_files := \
   src/vixl/a64/instrument-a64.cc \
   src/vixl/a64/logic-a64.cc \
   src/vixl/a64/macro-assembler-a64.cc \
-  src/vixl/a64/simulator-a64.cc \
   src/vixl/code-buffer.cc \
   src/vixl/compiler-intrinsics.cc \
   src/vixl/utils.cc
@@ -82,12 +81,9 @@ vixl_test_files := \
   test/test-fuzz-a64.cc \
   test/test-invalset.cc \
   test/test-runner.cc \
-  test/test-simulator-a64.cc \
   test/test-utils-a64.cc
 
 vixl_cpp_flags := \
-  -DVIXL_INCLUDE_SIMULATOR \
-  -DVIXL_GENERATE_SIMULATOR_INSTRUCTIONS_VALUE=0 \
   -Wextra \
   -fdiagnostics-show-option \
   -Wredundant-decls \
